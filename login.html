@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>后台签到页面登录</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- 登录框 -->
+    <div class="login-box">
+      <div class="top-banner">
+        <h1>光谱系统登录</h1>
+        <h2>项目研究人员指定登录界面</h2>
+      </div>
+      <div class="admin-msg">
+        <ul class="page-ul clearfix row">
+          <li class="col-md-4">
+            <a href="javascript:void(0);" class="guest-btn active-btn">
+              用户
+            </a>
+          </li>
+          <li class="col-md-4">
+            <a href="javascript:void(0);" class="admin-btn">
+              管理员
+            </a>
+          </li>
+          <li class="col-md-4">
+            <a href="javascript:void(0);" class="register-btn">
+              注册
+            </a>
+          </li>
+        </ul>
+        <!-- 用户登录框 -->
+        <form class="form-horizontal guest-login login-container active-container">
+          <div class="form-group account-input">
+            <label for="inputEmail3" class="col-sm-2 control-label">账号:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Account">
+            </div>
+          </div>
+          <div class="form-group password-input">
+            <label for="inputPassword3" class="col-sm-2 control-label">密码:</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+          <input type="button" value="登录" class="login-btn"/>
+        </form>
+        <!-- 管理员登录框 -->
+        <form class="form-horizontal admin-login login-container">
+            <div class="form-group account-input">
+              <label for="inputEmail3" class="col-sm-2 control-label">账号:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Account">
+              </div>
+            </div>
+            <div class="form-group password-input">
+              <label for="inputPassword3" class="col-sm-2 control-label">密码:</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <input type="button" value="登录" class="login-btn"/>
+          </form>
+          <!-- 注册框 -->
+        <form class="form-horizontal register-login login-container">
+          <div class="form-group account-input">
+            <label for="inputEmail3" class="col-sm-2 control-label">账号:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Account">
+            </div>
+          </div>
+          <div class="form-group password-input">
+            <label for="inputPassword3" class="col-sm-2 control-label">密码:</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+          <div class="radio radio-float">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              注册成为管理员
+            </label>
+          </div>
+          <div class="radio radio-float">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              注册成为用户
+            </label>
+          </div>     
+          <input type="button" value="注册" class="login-btn"/>
+        </form>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- own js -->
+    <script src="js/login.js"></script>
+  </body>
+</html>
